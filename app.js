@@ -25,7 +25,6 @@
           $("#inputNome").popover('show');
           return false;
       }
-      $('#inputNome').popover('destroy');
 
 
     inputEmail = $("#inputEmail").val();
@@ -37,7 +36,6 @@
         $("#inputEmail").popover('show');
         return false;
     }
-    $('#inputEmail').popover('destroy');
   
   
   //valida se as senhas comferem
@@ -56,8 +54,6 @@
           $("#inputComfirmaSenha").popover('show');
           return false;
       }
-      $('#inputSenha').popover('destroy');
-      $('#inputComfirmaSenha').popover('destroy');
 
       if (comfirmaSenha != senha || senha =="" || comfirmaSenha==""){
 
@@ -66,7 +62,7 @@
           $("#inputComfirmaSenha").popover("show");
           return false;
       }    
-      $('#inputComfirmaSenha').popover('destroy');
+      
 
       
       // verificacao CPF 
@@ -88,7 +84,7 @@
           $("#inputCPF").popover("show");
           return false;
       }
-      $('#inputCPF').popover('destroy');
+     
 
 
       //segundo digito
@@ -109,7 +105,7 @@
           $("#inputCPF").popover("show");
           return false;
       }
-      $('#inputCPF').popover('destroy');
+     
   
 
       //recebe a data e sapara dia, mes e ano em matriz
@@ -132,7 +128,7 @@
           $("#inputNascimento").attr('data-placement','top');
           $("#inputNascimento").popover("show");
       }
-      $('#inputNascimento').popover('destroy');
+     
       if(
       parseInt(dataNascimentoAux[2]) > parseInt(dataAtual[2]) || 
       parseInt(dataNascimentoAux[0]) > 31 || parseInt(dataNascimentoAux[0]) == 0 ||
@@ -143,7 +139,7 @@
           $("#inputNascimento").popover("show");
           return false;
       }
-      $('#inputNascimento').popover('destroy');
+     ;
 
       
       //verificacao do genero
@@ -154,8 +150,8 @@
           $("#Genero").popover("show");
           return false;
       } 
-      $('#Genero').popover('destroy');
+
   
-      alert("formulario enviado");
+      alert("Cadastro Enviado");
       $("#formCadastro").submit();
   }
